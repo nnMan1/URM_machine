@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>URM emulator</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js" defer></script>
+  </head>
+  <body>
+    <div class="grid_div">
+      <h1>UML emulator</h1>
+      <div class="contorls">
+        <button type="button" name="run_button">Run</button>
+      </div>
+      <div id="code_div">
+        <textarea id="line_numbers" disabled></textarea>
+        <textarea id="code" rows="20"></textarea>
+      </div>
+      <div class="registers_input">
+        <label for="registers_input">Ulaz:</label>
+        <input id="registers_input" type="text" name="registers_input" value="">
+      </div>
+
+      <div class="registers_output">
+        <label>Izlaz:</label>
+        <input id="registers_output" type="text" name="registers_output" value="">
+      </div>
+    </div>
+  </body>
+</html>
