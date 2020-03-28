@@ -1,0 +1,20 @@
+{
+  "name": "urm_emulator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nnMan1/URM_machine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nnMan1/URM_machine/issues"
+  },
+  "homepage": "https://github.com/nnMan1/URM_machine#readme"
+}
