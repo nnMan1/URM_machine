@@ -1,14 +1,15 @@
 .grid_div {
   display: grid;
   grid-template-columns: 15% auto 15%;
-  grid-template-rows: 100px 50px auto 50px 50px;
+  grid-template-rows: 100px 50px 70px auto auto auto;
+  font-family: 'Baloo Bhaina 2', cursive;
 }
 
  .grid_div #code_div {
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
   display: grid;
   grid-template-columns: 50px auto;
 }
@@ -31,8 +32,8 @@
 .grid_div .registers_input {
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 4;
-  grid-row-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 5;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
@@ -41,25 +42,66 @@
 .grid_div .registers_output {
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 5;
-  grid-row-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 6;
   margin-top: 15px;
   display: flex;
   flex-direction: column;
 }
 
-.grid_div  input {
+#registers_input, #registers_output {
   border-radius: 0px;
-  border-style: double;
-  border-color: #f54242;
+  border: 1px solid darkgrey;
+  height: 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#registers_input:focus, #registers_output:focus {
+  outline: none;
+  border-color: lightblue;
+}
+
+.grid_div #fileInput {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 .grid_div .contorls {
   grid-column-start: 2;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
   display: flex;
   flex-direction: row;
   margin-bottom: 15px;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid lightblue;
+  background: lightblue;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  height: 45px;
+}
+
+button:focus {
+  outline: none;
+}
+
+#myFile {
+  margin-left: 10px;
+}
+
+#code:focus {
+  outline: none;
+  border-color: lightblue;
+}
+
+.mr-30 {
+  margin-right: 30px;
 }
