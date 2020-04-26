@@ -102,6 +102,7 @@ runButton.addEventListener("click", (e) => {
 var reader = new FileReader();
 reader.onload = function (e) {
     textEditor.value = e.target.result.trim();
+    updateLineNumbers()
 };
 
 document.getElementById("loadButton").addEventListener('click', function() {
